@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV | Nikita Kotegov</title>
+    <link rel="icon" type="image/x-icon" href="img/website-icon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="cv-photo">
+                <img src="img/IMG_0683.jpg" alt="cv-photo">
+            </div>
+            <div class="cv-name">
+                <h1>Nikita Kotegov</h1>
+                <span>Graphic designer  |  Front-end developer</span>
+            </div>
+            <div class="contacts">
+                <ul>
+                    <li class="social">
+                        <a href="tel:375299835866">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <span class="social-name">+375299835866</span>
+                        </a>
+                    </li>
+                    <li class="social">
+                        <a href="mailto:nikita.kotegov@bk.ru">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <span class="social-name">nikita.kotegov@mail.ru</span>
+                        </a>
+                    </li>
+                    <li class="social">
+                        <a href="https://t.me/keenprod">
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                            <span class="social-name">keenprod</span>
+                        </a>
+                    </li>
+                    <li class="social">
+                        <a href="https://www.instagram.com/okeen_/">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <span class="social-name">okeen_</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <nav>
+            <a href="#aboutMe">About me</a>
+            <span>|</span>
+            <a href="#skills">Skills</a>
+            <span>|</span>
+            <a href="#projects">Projects</a>
+            <span>|</span>
+            <a href="#courses">Courses</a>
+            <span>|</span>
+            <a href="#englishLevel">English</a>
+            <span>|</span>
+            <a href="#codeExample">Examples</a>
+        </nav>
+        <main>
+            <div class="main-container">
+                <div class="about-me" id="aboutMe">
+                    <div>
+                        <h3>About me</h3>
+                        <div class="about-me-text">
+                            <p>
+                                I am 19. I am studying at the Belarusian-Russian University.
+                            </p>
+                            <p>
+                                In addition to my studies, I was engaged in social activities for a year and a half,
+                                 engaged in scientific activities, participated in various competitions and olympiads,
+                                for example, Case-In. This competition gave an opportunity to work on a real project.
+                            </p>
+                            <p>
+                                I am fond of graphic design, video editing and music at an amateur level.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills" id="skills">
+                    <div>
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>
+                                <ion-icon name="logo-html5"></ion-icon>
+                                HTML
+                            </li>
+                            <li>
+                                <ion-icon name="logo-css3"></ion-icon>
+                                CSS
+                            </li>
+                            <li>
+                                <ion-icon name="logo-nodejs"></ion-icon>
+                                JS
+                            </li>
+                            <li>
+                                <ion-icon name="logo-laravel"></ion-icon>
+                                Laravel
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="projects" id="projects">
+                    <div>
+                        <h3>Projects</h3>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/KeeNPlay/MoHIwCS">MoHIwCS (Labs)</a>
+                            </li>
+                            <li>
+                                <a href="#">Curriculum vitae</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="courses" id="courses">
+                    <div>
+                        <h3>Courses</h3>
+                        <ul>
+                            <li>
+                                <p>Stepik.org - Web Development for Beginners: HTML and CSS.</p>
+                            </li>
+                            <li>
+                                <a href="https://stepik.org/cert/1416033">Sertificate</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="english-level" id="englishLevel">
+                    <div>
+                        <h3>English</h3>
+                        <p>Level: <a href="https://puzzle-english.com/level-test?result_id=28411128">B1</a></p>
+                    </div>
+                </div>
+            </div>
+<!--            <hr class="divider">-->
+            <div class="code-container" id="codeExample">
+                <h3>Code examples</h3>
+                <div class="code-grid">
+                    <div class="js-toggler">
+                        <h4>JS Toggler</h4>
+                        <span class="code-example">
+                            javascript let toggle = document.querySelector(“.toggle”);<br>
+                            let navigation = document.querySelector(“.navigation”);<br>
+                            let main = document.querySelector(“.main”);<br>
+                            toggle.onclick = function () {<br>
+                            navigation.classList.toggle(“active”);<br>
+                            main.classList.toggle(“active”);<br>
+                            };<br>
+                            <br>
+                            let list = document.querySelectorAll(“.navigation li”);
+                            function activeLink() {<br>
+                            list.forEach((item) => item.classList.remove(“hovered”));<br>
+                            this.classList.add(“hovered”); <br>
+                            }<br>
+                            <br>
+                            list.forEach((item) => item.addEventListener(“click”, activeLink));
+                        </span>
+                    </div>
+                    <div class="js-accordion-menu">
+                        <h4>JS Accordion Menu</h4>
+                        <span class="code-example">
+                            const items = document.querySelectorAll('.accordion button');<br>
+                            function toggleAccordion() {<br>
+                            const itemToggle = this.getAttribute('aria-expanded');<br>
+                            <br>
+                            if (itemToggle == 'true') {<br>
+                            this.setAttribute('aria-expanded', 'false');<br>
+                            }<br>
+                            <br>
+                            if (itemToggle == 'false') {<br>
+                            this.setAttribute('aria-expanded', 'true');<br>
+                            }<br>
+                            }<br>
+                            <br>
+                            items.forEach((item) => item.addEventListener('click', toggleAccordion));
+                        </span>
+                    </div>
+                    <div class="js-flipper">
+                        <h4>JS Flipper</h4>
+                        <span class="code-example">
+                            document.addEventListener('DOMContentLoaded', function () {<br>
+                            [].forEach.call(document.querySelectorAll(".analytics-card"),<br>
+                            function (analyticsCard, i, analyticsCards) {<br>
+                            analyticsCard.addEventListener("click", function (e) {<br>
+                            e.currentTarget.classList.toggle("flipped");<br>
+                            });<br>
+                            });<br>
+                            });
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div>
+                    <span><a href="https://github.com/KeeNPlay?tab=repositories">GitHub</a> <span class="divider">|</span> 2022</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
