@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    background-color: #181818;
+    width: 100%;
+    height: 90px;
+    font-size: 16px;
+    position: absolute;
+}
+
+nav .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 120px;
+}
+
+nav .container div{
+    margin: 24px 0;
+}
+
+nav .container div .nav-link{
+    font-size: 15px;
+    margin: 0 32px 0 0;
+}
+
+nav .container div .nav-link:nth-child(1){
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0 56px 0 0;
+}
+
+nav .container div .nav-link:nth-child(4){
+    margin: 0 31px 0 0;
+}
+
+nav .container .get-template-button{
+    width: 155px;
+    height: 42px;
+    background: #fff;
+    border-radius: 14px;
+}
+
+nav .container .get-template-button a{
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    margin: 0;
+}
+
+nav .container img{
+    margin: 30px 0;
+    height: 31px;
+}
+
+main .aperture-studio-about{
+    text-align: center;
+    height: 800px;
+    background-image: url('../img/aperture-studio-about-bg.png');
+    background-size: cover;
+}
+
+main .aperture-studio-about .container{
+    height: 716px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+main .aperture-studio-about .container .text-container{
+    margin-top: 526px;
+}
+
+main .aperture-studio-about .container .aperture-type,
+main .aperture-studio-about .container .aperture-description
+{
+    color: #C0C0C0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+main .aperture-studio-about .container .aperture-name{
+    color: #fff;
+    font-size: 54px;
+}
+
+main .aperture-studio-about .container .aperture-description{
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.camera-options{
+    padding: 4px 20px 0 0;
+    display: flex;
+    font-size: 12px;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.camera-options div{
+    margin-left: 16px;
+}
+
+.camera-options div:nth-child(4){
+    margin-right: 40px;
+}
+
+.camera-options div span{
+    margin-left: 6px;
+}
+
+main .what-we-do{
+    width: 100%;
+    height: 1558px;
+    background: #000;
+    color: #fff;
+    padding-top: 113px;
+}
+
+.what-we-do .title{
+    font-size: 40px;
+    text-align: center;
+}
+
+.what-we-do .description{
+    font-size: 23px;
+    color: #C0C0C0;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.what-we-do .cards-container{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    align-items: center;
+}
+
+.what-we-do .card{
+    height: 600px;
+    width: 576px;
+    display: flex;
+    flex-direction: column;
+}
+
+.what-we-do .card:nth-child(1){
+    background-image: url('../img/product-photography.png');
+    justify-self: end;
+}
+
+.what-we-do .card:nth-child(2){
+    background-image: url('../img/architecture-photography.png');
+    justify-self: start;
+}
+
+.what-we-do .card:nth-child(3){
+    background-image: url('../img/drone-photography.png');
+    justify-self: end;
+}
+
+.what-we-do .card:nth-child(4){
+    background-image: url('../img/wildlife-photography.png');
+    justify-self: start;
+}
+
+.what-we-do .card .card-title{
+    margin-top: 421px;
+    margin-left: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.what-we-do .card .card-title-bottom {
+     margin-top: 401px;
+ }
+
+.what-we-do .card .card-description{
+    margin-top: 14px;
+    margin-left: 30px;
+    font-size: 14px;
+    width: 514px;
+    color: #C0C0C0;
+}
+
+.what-we-do .card .read-more-btn{
+    display: flex;
+    margin-top: 19px;
+    width: 143px;
+    height: 42px;
+    border-radius: 14px;
+    font-size: 15px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.what-we-do .card .read-more-btn span{
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    margin: 9px 0 12px 2px;
+}
+
+.what-we-do .card img{
+    align-content: center;
+    width: 32px;
+    margin: 4px;
+}
+
+.sunset-at-mount-fuji{
+    height: 600px;
+    background-image: url('../img/sunset-at-mount-fuji-bg.png');
+    background-size: cover;
+    position: relative;
+}
+
+.sunset-at-mount-fuji .container{
+    margin-left: 1080px;
+    flex-direction: column;
+}
+
+.sunset-at-mount-fuji .title{
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 260px;
+}
+
+.sunset-at-mount-fuji .description{
+    font-size: 14px;
+    color: #C0C0C0;
+    width: 298px;
+}
+
+.sunset-at-mount-fuji .camera-options{
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+}
