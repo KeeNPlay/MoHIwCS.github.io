@@ -104,6 +104,8 @@ main .aperture-studio-about .container .aperture-name{
 main .aperture-studio-about .container .aperture-description{
     text-transform: none;
     letter-spacing: 0;
+    width: 580px;
+    margin: 0 auto;
 }
 
 .camera-options{
@@ -116,6 +118,8 @@ main .aperture-studio-about .container .aperture-description{
 
 .camera-options div{
     margin-left: 16px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .camera-options div:nth-child(4){
@@ -202,7 +206,8 @@ main .what-we-do{
     color: #C0C0C0;
 }
 
-.what-we-do .card .read-more-btn{
+.read-more-btn{
+    border: none;
     display: flex;
     margin-top: 19px;
     width: 143px;
@@ -213,7 +218,8 @@ main .what-we-do{
     position: relative;
 }
 
-.what-we-do .card .read-more-btn span{
+.read-more-btn span{
+    font-size: 16px;
     letter-spacing: 0.4px;
     line-height: 20px;
     margin: 9px 0 12px 2px;
@@ -233,7 +239,7 @@ main .what-we-do{
 }
 
 .sunset-at-mount-fuji .container{
-    margin-left: 1080px;
+    margin-left: 75%;
     flex-direction: column;
 }
 
@@ -243,6 +249,7 @@ main .what-we-do{
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-top: 260px;
+    line-height: 20px;
 }
 
 .sunset-at-mount-fuji .description{
@@ -256,3 +263,345 @@ main .what-we-do{
     right: 20px;
     bottom: 40px;
 }
+
+.tools .container{
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    height: 540px;
+}
+
+.tools .container .text{
+    background: #000;
+    position: relative;
+}
+
+.tools .container .text .text-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 600px;
+}
+
+.tools .container .text .type,
+.tools .container .text .title,
+.tools .container .text .description{
+    color: #fff;
+}
+
+.tools .container .text .type{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+
+.tools .container .text .title{
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 6px;
+}
+
+.tools .container .text .description{
+    font-size: 14px;
+    line-height: 20px;
+    width: 514px;
+    margin-top: 14px;
+}
+
+.tools .container .text .read-more-btn{
+    margin-left: 0;
+}
+
+.tools .container .text .read-more-btn img{
+    align-content: center;
+    width: 32px;
+    margin: 4px 2px 0 4px;
+}
+
+.tools .container .photo{
+    width: 100%;
+    background-image: url('../img/tools-bg.png');
+    background-size: cover;
+}
+
+.tools .container .photo .camera-options{
+    margin-top: 484px;
+}
+
+.monstera-leafs{
+    height: 600px;
+    background-image: url('../img/Monstera-leafs-bg.png');
+    background-size: cover;
+    position: relative;
+}
+
+.monstera-leafs .container{
+    margin-left: 75%;
+    flex-direction: column;
+}
+
+.monstera-leafs .title{
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 260px;
+    line-height: 20px;
+}
+
+.monstera-leafs .description{
+    font-size: 14px;
+    color: #C0C0C0;
+    width: 298px;
+}
+
+.monstera-leafs .camera-options{
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+}
+
+.clients{
+    background: #000;
+    padding: 120px 120px 100px 120px;
+    color: #fff;
+}
+
+
+.clients .container{
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.clients .container .title{
+    font-size: 40px;
+    line-height: 42px;
+}
+
+.clients .container .description{
+    font-size: 24px;
+    color: #C0C0C0;
+    margin-top: 15px;
+}
+
+.clients .container .clients-logos{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.clients .container .clients-logos div{
+    margin-top: 40px;
+}
+
+.star-fall{
+    height: 600px;
+    background-image: url('../img/star-fall-bg.png');
+    background-size: cover;
+    position: relative;
+}
+
+.star-fall .container{
+    margin-left: 75%;
+    flex-direction: column;
+}
+
+.star-fall .title{
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 260px;
+    line-height: 20px;
+}
+
+.star-fall .description{
+    font-size: 14px;
+    color: #C0C0C0;
+    width: 298px;
+}
+
+.star-fall .camera-options{
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+}
+
+.get-in-touch .container{
+    padding-top: 120px;
+    text-align: center;
+    background: #000;
+    height: 414px;
+    display: flex;
+    flex-direction: column;
+}
+
+.get-in-touch .container .title{
+    color: #fff;
+    font-size: 40px;
+    line-height: 42px;
+    width: 541px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.get-in-touch .container .description{
+    color: #C0C0C0;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.get-in-touch .container .read-more-btn{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;
+    width: 154px;
+}
+
+.get-in-touch .container .read-more-btn img{
+    margin: 4px 2px 0 4px;
+}
+
+footer .container{
+    background: #000;
+    padding: 100px 136px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 652px;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 0.4fr);
+}
+
+.logo-and-description {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-and-description .description{
+    color: #C0C0C0;
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.business-area {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.business-area ul li{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.business-area ul li:nth-child(1){
+    color: #C0C0C0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.pages {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.pages ul li{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.pages ul li:nth-child(1){
+    color: #C0C0C0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+hr {
+    border: none;
+    color: #fff;
+    background: #fff;
+    height: 2px;
+    margin-top: 26px;
+}
+
+footer .subscribe-container{
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 0.4fr);
+}
+
+footer .subscribe-container .text {
+    grid-area: 1 / 1 / 2 / 2;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+}
+
+footer .subscribe-container .text .title{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+footer .subscribe-container .text .description{
+    color: #C0C0C0;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+footer .subscribe-container .subscribe-btn-block {
+    grid-area: 1 / 2 / 2 / 4;
+    width: 100%;
+}
+
+footer .subscribe-container .subscribe-btn {
+    background: #fff;
+    height: 52px;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .subscribe-container .subscribe-btn img{
+    margin: 11px 6px;
+}
+
+.second-divider {
+    margin-top: 40px;
+}
+
+footer .copyright-and-socials-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+    width: 100%;
+}
+
+footer .copyright-and-socials-container .copyright-block .copyright-text{
+    font-size: 14px;
+    color: #C0C0C0;
+}
+
+footer .copyright-and-socials-container .copyright-block a{
+    font-size: 13px;
+    color: #C0C0C0;
+}
+
+footer .copyright-and-socials-container .socials-block{
+    display: flex;
+}
+
+footer .copyright-and-socials-container .socials-block .social-logo{
+    margin-left: 20px;
+}
+
